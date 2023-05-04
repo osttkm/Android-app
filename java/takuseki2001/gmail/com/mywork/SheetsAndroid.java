@@ -25,7 +25,7 @@ public class SheetsAndroid extends AsyncTask<GoogleAccountCredential,Void,List<S
     private static final String APPLICATION_NAME = "takuseki2001@gmail.com";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final HttpTransport HTTP_TRANSPORT = new com.google.api.client.http.javanet.NetHttpTransport();
-    private String SPREAD_SHEETS_ID = "1tN8AU0dk3_1SkWcBtCbAA5Fls3GmJNxOBaD8OTFhfL8";
+    private String SPREAD_SHEETS_ID = "your sheet id";
     //データを変換するための変数
     private List<List<Object>> values = new ArrayList<List<Object>>();
     private  List<String> results = new ArrayList<String>();
@@ -58,7 +58,7 @@ public class SheetsAndroid extends AsyncTask<GoogleAccountCredential,Void,List<S
         try {
             //データの読み取りは以下の通り。スプレッドシートIDと読み取る範囲を指定する
             /*response = service.spreadsheets().values()
-                    .get("1tN8AU0dk3_1SkWcBtCbAA5Fls3GmJNxOBaD8OTFhfL8", "data!A1:C1")
+                    .get("your shht id", "data!A1:C1")
                     .execute();*/
             this.service.spreadsheets().values()
                     .update(SPREAD_SHEETS_ID,"data!A1:A1",response)
