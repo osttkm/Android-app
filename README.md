@@ -1,72 +1,33 @@
 # Android-app
 学部３年前期に制作したアンドロイドアプリです．
 passwordなどをGoogle spread　sheetのapi，およびspread sheetからPCのクリップボードにコピーする自作apiを作成しました．
-多要素認証で必要とされるパスワードがスマートフォンからしか確認できず，PC側でいちいち入力するのが面倒だったためそれを簡易化するために作成しました．
+多要素認証で必要とされるパスワードがスマートフォンからしか確認できず，PC側で入力する際にスマホを確認しなければならない点が不便だったためそれを簡易化するために作成しました．
 セキュリティ対策としては指紋認証を導入しました．
 
 
-# Physics_Sim_Py
+# File
 
-"Physics_Sim_Py" is a tutorial of physics simulations with Python.
+MainActivity.javaがメインのファイルです．
+その他のファイルはレイアウトや，指紋認証，Google SHEETのAPI利用に関するコードです．
 
 # DEMO
 
 
 # Features
-
-Physics_Sim_Py used [pyxel](https://github.com/kitao/pyxel) only.
-
-```python
-import pyxel
-```
-[Pyxel](https://github.com/kitao/pyxel) is a retro game engine for Python.
-You can feel free to enjoy making pixel art style physics simulations.
+指紋認証機能，Google sheets apiを利用したAndroid端末とPC間でのクリップボード共有機能を搭載しています．
+指紋認証に関しては，各端末のAPIバージョン，Google apiに関してはユーザーアカウントを利用したOAuth認証が必要となります．
 
 # Requirement
-
-* Python 3.6.5
-* pyxel 1.0.2
-
-Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/) is tested.
-
-```bash
-conda create -n pyxel pip python=3.6 Anaconda
-activate pyxel
-```
-
-# Installation
-
-Install Pyxel with pip command.
-
-```bash
-pip install pyxel
-```
+Android studioが必要です．
+また，エミュレータや実機での実行はその都度APIバージョンをご確認ください．
 
 # Usage
-
-Please create python code named "demo.py".
-And copy &amp; paste [Day4 tutorial code](https://cpp-learning.com/pyxel_physical_sim4/).
-
-Run "demo.py"
-
-```bash
-python demo.py
-```
+エニュミレータ環境 or アンドロイドの実機を用意しAndroid studioを介して実行してください．
 
 # Note
-
-I don't test environments under Linux and Mac.
+APIなどのバージョンによりコードをそのまま利用できない場合があります．
 
 # Author
 
-* Hayabusa
-* R&D Center
-* Twitter : https://twitter.com/Cpp_Learning
-
-# License
-
-"Physics_Sim_Py" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-Enjoy making cute physics simulations!
-
-Thank you!
+* 尾下 拓未
+** 岐阜大学　学部３年時前期作成
