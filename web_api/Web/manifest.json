@@ -1,0 +1,17 @@
+{
+  "name": "２段階認証簡略化",
+  "version": "1.0",
+  "description": "Build an Extenshion",
+  "icons":{
+    "16":"icon16.png"
+  },
+  "browser_action":
+  {
+    "default_icon": "icon16.png",
+    "default_title": "copy!!"
+  },
+  "background":{
+    "scripts":["background.js"]
+  },
+  "manifest_version": 2
+}
