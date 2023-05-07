@@ -10,6 +10,7 @@ MainActivity.javaがメインのファイルです．
 その他のファイルはレイアウトや，指紋認証，Google SHEETのAPI利用に関するコードです．
 
 # DEMO
+CLIPボード共有機能のでも映像です．指紋認証を含めたすべてのデモは実践動画.mp4からご覧ください．
 https://user-images.githubusercontent.com/104403446/236412810-11d4025b-249c-4968-a418-ae797f772be8.mp4
 
 
